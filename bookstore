@@ -1,0 +1,14 @@
+Steps:
+1. rvm use 2.4.1 (ruby version)
+2. rvm gemset create bookstore
+3. rvm gemset use bookstore
+4. gem install rails -v '4.2.8'
+5. rails new bookstore mysql2
+6. bundle install
+7. gem install therubyracer
+8. rake db:create
+9. rails s
+10. mysql -u root -p (to check the database environment)
+11. rails g scaffold user name:string city:string mobile:integer
+12. rake db:migrate
+13. start server
